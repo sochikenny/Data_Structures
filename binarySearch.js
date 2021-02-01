@@ -21,3 +21,15 @@ function binarySearch(arr, target){
 }
 
 console.log(binarySearch([1,2,3,4,5], 3))
+//Time Complexity: O(log(n)); Space Complexity: O(1)
+
+//-------------------------- Prinamry Solution---------------------------//
+function binary(arr, target){
+    for(let i = 0; i < arr.length; i++){
+        if (target === arr[i]) return i
+    }
+    return -1
+}
+// console.log(binary([1,2,3,4,5], 3))
+
+
