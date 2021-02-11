@@ -116,7 +116,7 @@ class SinglyLinkedList{
 //       }
 //       return this;
 //     }
-    reverseList(head){
+    reverseList(){
         let prev = null
         let current = this.head
         let next = null
