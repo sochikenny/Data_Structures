@@ -34,6 +34,21 @@ class BST{
             }
         }
     }
+    search(value){
+        if(!this.root) return false
+        let current = this.root
+        let found = false
+        while(current && !found){
+            if(value < current.value){
+                current = current.left
+            }else if(value > current.value){
+                current = current.right
+            }else{
+                return true
+            }
+        }
+        return false
+    }
 }
 
 const binSearchTree = new BST()
@@ -43,5 +58,7 @@ binSearchTree.insert(7)
 binSearchTree.insert(10)
 binSearchTree.insert(4)
 binSearchTree.insert(13)
+const find_10 = binSearchTree.search(10)
 
 console.log(binSearchTree)
+console.log(find_10)
