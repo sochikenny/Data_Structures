@@ -2,8 +2,9 @@ function palindrome(str){
     let left = 0;
     let right = str.length - 1;
     while(left < right){
-        if(str[left]!==str[right])
+        if(str[left]!==str[right]){
             return false
+        } 
             left ++
             right --
     }
@@ -11,3 +12,4 @@ function palindrome(str){
 }
 
 console.log(palindrome('tacocat'))
+console.log(palindrome('tacocatk'))
