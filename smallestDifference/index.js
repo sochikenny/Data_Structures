@@ -6,22 +6,20 @@
 //         let current = Math.abs(arr1[i] - arr2[j])
 //             if(smallest > current){
 //                 smallest = current
+//                 console.log(smallest)
 //             }
 //         }
 //     }
 //     return smallest
 // }
+
 // console.log(smallestDiff([-1,5,10,20,28,3], [26,134,135,15,17]))
 
 //OPTIMAL SOLUTION
 function smallestDifference(arrayOne, arrayTwo){
     arrayOne.sort((a,b)=> a-b)
     arrayTwo.sort((a,b)=> a-b)
-    let result = []
-    let current
-    let smallest = Infinity
-    let i = 0
-    let j = 0
+    let result = [], current, smallest = Infinity, i = 0, j = 0
     while(i < arrayOne.length && j < arrayTwo.length){
         let firstNum = arrayOne[i]
         let secondNum = arrayTwo[j]
@@ -44,6 +42,7 @@ function smallestDifference(arrayOne, arrayTwo){
 
 
 console.log(smallestDifference([-1,5,10,20,28,3], [26,134,135,15,17]))
+
 
 
 
