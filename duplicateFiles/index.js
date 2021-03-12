@@ -17,7 +17,14 @@ function findDuplicate(paths){
             group[temp[1]].push(path[0]+'/'+temp[0])
         }
     }
-    return [...Object.values(group)].filter((val)=> val.length > 1)
+    // return [...Object.values(group)].filter((val)=> val.length > 1)
+    let result = []
+    Object.values(group).map(function(val){
+        if(val.length > 1){
+            result.push(val)
+        }
+    })
+    return result
 }
 
 console.log(findDuplicate(["root/a 1.txt(abcd) 2.txt(efgh)", "root/c 3.txt(abcd)", "root/c/d 4.txt(efgh)", "root 4.txt(efgh)"]))
