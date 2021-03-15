@@ -1,1 +1,9 @@
 Follow Up Questions
+1. How to save space?
+- If using Java, use byte[][].
+- Don't make an extra board. Just rewrite the current one.
+- All you need is a set of the cells that are alive
+2. What if this can't fit into an array?
+- Read the rows as streams from a disk, read 3 rows at a time
+3. What if we just give you generating functions G(row, col, time) for the cell states?
+- Just do the math with the generating functions.

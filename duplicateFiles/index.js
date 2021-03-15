@@ -9,7 +9,7 @@ function findDuplicate(paths){
     let group = {} //initialize a hash table(object in JS)
     for(let i = 0; i < paths.length; i++){ //interate thru the paths(input)
         let path = paths[i].split(' ') //split each path by space to see easily see info
-        for(let j = 1; j < path.length; j){  //iterate each path
+        for(let j = 1; j < path.length; j++){  //iterate each path
             let temp = path[j].split('(') //for each path, I will split by parentheses
             if(group[temp[1]]=== null){
                 group[temp[1]] = []
