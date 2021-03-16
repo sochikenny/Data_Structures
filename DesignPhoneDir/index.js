@@ -40,7 +40,7 @@ class PhoneDirectory{
         return nextAvailable
     }
     check(number){
-        this.directory.has(number)
+        return this.directory.has(number)
     }
     release(number){
         this.directory.add(number)
@@ -52,6 +52,6 @@ class PhoneDirectory{
     }
 }
 
-// let phoneDirectory = new PhoneDirectory(3);
-// console.log(phoneDirectory)
-// console.log(phoneDirectory.check())
+let phoneDirectory = new PhoneDirectory(3);
+console.log(phoneDirectory)
+console.log(phoneDirectory.check(1))
