@@ -28,6 +28,42 @@ function validAnagram(str1, str2){
     return true
 }
 
+// function validAnagram(str1, str2){
+//  if(str1.length !== str2.length){
+//      return false
+//  }
+//  let obj1 = {}
+//  let obj2 = {}
+
+//  for(let i = 0; i < str1.length; i++){
+//     let valOne = str1[i]
+//     if(valOne in obj1){
+//         obj1[valOne] += 1
+//     }else{
+//         obj1[valOne] = 1
+//     }
+//  }
+
+//  for(let i = 0; i < str2.length; i++){
+//     let valTwo = str2[i]
+//     if(valTwo in obj2){
+//         obj2[valTwo] += 1
+//     }else{
+//         obj2[valTwo] = 1
+//     }
+//  }
+
+//  for(let key in obj1){
+//      if(!(key in obj2)){
+//          return false
+//      }
+//      if(obj2[key]!== obj1[key]){
+//          return false
+//      }
+//  }
+
+//  return true
+// }
 console.log(validAnagram('',''))
 console.log(validAnagram('aaz', 'zza'))
 console.log(validAnagram('anagram', 'nagaram'))
