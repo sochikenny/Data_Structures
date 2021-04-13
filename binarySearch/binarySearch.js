@@ -26,9 +26,8 @@
 function Bsearch(arr, target){
     let left = 0
     let right = arr.length - 1
-
-    while(left <= right){
-        let midVal = Math.floor((left+right)/2)
+    while(left <= right){ 
+        let midVal = Math.floor((left+right)/2)   
         if(target < arr[midVal]){
             right = midVal - 1
         }else if(target > arr[midVal]){
@@ -40,7 +39,7 @@ function Bsearch(arr, target){
     return -1
 }
 
-console.log(Bsearch([1,2,3,4,5], 3))
+console.log(Bsearch([1,2,3,4,5], 1))
 
 //-------------------------- Linear Search ---------------------------//
 function linear(arr, target){
