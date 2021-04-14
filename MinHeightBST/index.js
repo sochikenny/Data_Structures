@@ -29,7 +29,7 @@ function constructMinHeightBst(array, startIdx, endIdx){
 	if (endIdx < startIdx) return;
 	const midIdx = Math.floor((startIdx + endIdx)/2);
 	const value = array[midIdx];
-    const bst = new BST(value)
+  const bst = new BST(value)
 	bst.left = constructMinHeightBst(array, startIdx, midIdx - 1);
 	bst.right = constructMinHeightBst(array, midIdx + 1, endIdx);
 	return bst
