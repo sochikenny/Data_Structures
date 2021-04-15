@@ -1,3 +1,4 @@
+//Suppose you want to count the number of times a smaller string appears in a longer string
 function stringSearch(long, short){
     let count = 0
     for (let i = 0; i < long.length; i++){
