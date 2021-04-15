@@ -12,7 +12,7 @@ function maxSubarraySum(arr, num){
     //create an edge case 
     if(arr.length < num) return null
 
-    //loop through arr until you arrive at the number passed in thru the input
+    //loop through arr until you arrive at the number in the input
     //add up all the numbers under the num input
     for(let i = 0; i < num; i++){
         maxSum += arr[i]
