@@ -24,13 +24,15 @@ function maxSubarraySum(arr, num){
     //in this loop, update tempSum to taking to the current tempSum, adding the next item in the array
     //and subtracting the previous item in the array
     for(let i = num; i < arr.length; i++){
-        tempSum = tempSum - arr[i -num] + arr[i] //-->newly updated tempSum
+        tempSum = tempSum - arr[i-num] + arr[i] //-->newly updated tempSum
         //now, we gotta compare it to the maxSum
-        maxSum = Math.max(tempSum, maxSum)
+        if(tempSum > maxSum){ //updates maxSum if tempSum is larger
+            maxSum = tempSum
+        }
     }
     return maxSum
 }
 
-// console.log(maxSubarraySum([1,2,5,2,8,1,5], 2))
-// console.log(maxSubarraySum([1,2,5,2,8,1,5], 4))
+console.log(maxSubarraySum([1,2,5,2,8,1,5], 2))
+console.log(maxSubarraySum([1,2,5,2,8,1,5], 4))
 
