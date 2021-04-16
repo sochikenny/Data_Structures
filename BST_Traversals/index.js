@@ -57,7 +57,7 @@ function DFSPreOrder(tree){
 //TRAVERSALS W/O HELPERS-------------------------------------
 
 function inOrderTraverse(tree, array = []) {
-    // Write your code here.
+    // Base case
       if(tree === null) return
       
       inOrderTraverse(tree.left, array)
@@ -67,7 +67,7 @@ function inOrderTraverse(tree, array = []) {
   }
   
   function preOrderTraverse(tree, array = []) {
-    // Write your code here.
+    // Base case
       if(tree === null) return
       
       array.push(tree.value)
@@ -77,7 +77,7 @@ function inOrderTraverse(tree, array = []) {
   }
   
   function postOrderTraverse(tree, array = []) {
-    // Write your code here.
+    // Base case
       if(tree === null) return
       
       postOrderTraverse(tree.left, array)
