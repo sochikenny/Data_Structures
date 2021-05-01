@@ -17,10 +17,12 @@
 
 //OPTIMAL SOLUTION
 function smallestDifference(arrayOne, arrayTwo){
-    arrayOne.sort((a,b)=> a-b)
-    arrayTwo.sort((a,b)=> a-b)
+    arrayOne.sort((a,b)=> a-b) //sort array one
+    arrayTwo.sort((a,b)=> a-b) //sort array two
+
+    //initialize result, smallest to infinity, current, i and j indexes to 0
     let result = [], current, smallest = Infinity, i = 0, j = 0
-    while(i < arrayOne.length && j < arrayTwo.length){
+    while(i < arrayOne.length && j < arrayTwo.length){ //while loop on both arrays 
         let firstNum = arrayOne[i]
         let secondNum = arrayTwo[j]
          if(firstNum < secondNum){
