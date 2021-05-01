@@ -23,3 +23,6 @@ function nonChange(coins){
 // console.log(nonChange([1,1,1]))
 
 console.log(nonChange([5,7,1,1,2,3,22]))
+
+//Time --> O(nlogn) where n is the length of the array
+//Space --> O(1)
