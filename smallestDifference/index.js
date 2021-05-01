@@ -45,6 +45,6 @@ function smallestDifference(arrayOne, arrayTwo){
 
 console.log(smallestDifference([-1,5,10,20,28,3], [26,134,135,15,17]))
 
-
-
+//Time --> O(NlogN + MlogM) where n is the length of the first input array and m is the length of the second input array
+//Space --> O(1)
 
