@@ -7,6 +7,9 @@ function validateSubsequence(array, sequence){
         seqIdx ++
         arrIdx ++
     }
-    
+
     return seqIdx === sequence.length
 }
+
+//Time --> O(N) where N is the size of array
+//Space --> O(1)
