@@ -23,6 +23,8 @@ function traverse(node, data){
     traverse(node.right)
 }
 
+
+
 //PostOrder DFS Traversal
 function DFSPostOrder(tree){
     let data = []
@@ -37,6 +39,8 @@ function DFSPostOrder(tree){
        postTraverse(node.right)
        data.push(node.value)
    }
+
+   
 
 //PreOrder DFS Traversal
 function DFSPreOrder(tree){
