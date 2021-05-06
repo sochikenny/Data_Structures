@@ -30,10 +30,14 @@ function _groupAnagrams(strs){
 //Optimal Solution
 function groupAnagramsOpt(strs){
     let obj = {}
-    for(let i = 0; i < strs.length; i++){
+    for(let i = 0; i < strs.length; i++) {
         const primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37,
          41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101]
-        let key = strs[i].split('').reduce((total, acc)=> total*primes[acc.charCodeAt() - 97], 1);
+
+        let key = strs[i].split('')
+                         .reduce((total, acc) => total*primes[acc.charCodeAt() - 97], 1);
+        //console.log(key)
+
         if(key in obj){
             obj[key].push(strs[i])
         }else{

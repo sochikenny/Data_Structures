@@ -54,4 +54,29 @@ function gameOfLife(board){
     console.log(board[i][j])
 }
 
+//Solution 2 -------//
+function gameOfLife(board){
+    let r = board.length
+    let c = board[0].length
+
+    let directions = [
+        [-1,0], [-1,1], [0,1], [1,1], 
+        [1,0], [1,-1], [0,-1], [-1,-1]
+    ]  //all 8 neighbors of every single cell we visit
+
+    for(let i = 0; i < r; i++){
+        for(let j = 0; j < c; j++){
+            let liveCount = 0
+
+            for(let dir of directions){
+                let x = dir[0] + i
+                let y = dir[1] + j
+
+                if(x >= 0 && x < r && y >= 0 && y < c && Math.abs(board[x][y]===1)){
+                    liveCount ++
+                }
+            }
+        }
+    }
+}
 
