@@ -1,0 +1,14 @@
+Write a function that takes in a potentially invalid BST and returns a boolean
+representing whether the BST is valid 
+
+Sample Input:
+Tree =     10
+          /  \
+         5   15
+        / \  / \
+       2  5 13  22
+      /       \
+     1        14 
+
+Sample Output:
+True
